@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Recipe Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay"></div> <!-- Background overlay -->
+    <div class="container">
+        <h1>🍲 AI-Powered Recipe Generator 🍴- Tharsan K</h1>
+        <form id="recipe-form">
+            <label for="ingredients">Enter Available Ingredients:</label>
+            <input type="text" id="ingredients" placeholder="e.g., tomato, chicken, garlic">
+            
+            <label for="diet">Select Dietary Preferences:</label>
+            <select id="diet">
+                <option value="none">None</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten-Free</option>
+                <option value="keto">Keto</option>
+            </select>
+
+            <button type="submit">Generate Recipe</button>
+        </form>
+        <div id="recipe-result" class="recipe-output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
